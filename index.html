@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Memorama de Redes</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="estilos.css">
+
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body>
+
+<div id="contenedor">
+
+  <h1>Memorama de Redes</h1>
+
+  <div id="panel">
+    <div>Movimientos: <span id="mov">0</span></div>
+    <div>Pares: <span id="par">0</span>/12</div>
+    <div>Tiempo: <span id="time">0</span>s</div>
+  </div>
+
+  <div id="mensaje">🎉 ¡Ganaste!</div>
+
+  <div id="tablero"></div>
+
+  <button onclick="nuevo()">Nuevo Juego</button>
+
+</div>
+
+<audio id="ok" src="https://assets.mixkit.co/sfx/preview/mixkit-game-ball-tap-2073.mp3"></audio>
+
+<!-- Modal -->
+<div id="info">
+  <h2 id="nombre"></h2>
+  <p><b>Capa donde trabaja:</b></p>
+  <p id="capa"></p>
+
+  <p><b>¿Qué hace?</b></p>
+  <p id="funcion"></p>
+
+  <p><b>Descripción:</b></p>
+  <p id="descripcion"></p>
+
+  <button onclick="cerrarInfo()">Cerrar</button>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
